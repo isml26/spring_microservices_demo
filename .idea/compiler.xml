@@ -6,6 +6,7 @@
       <directory url="file://$PROJECT_DIR$/product-service/src/main/resources/archetype-resources" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/order-service/src/main/resources/archetype-resources" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/inventory-service/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/discovery-server/src/main/resources/archetype-resources" includeSubdirectories="true" />
     </excludeFromCompile>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
@@ -14,16 +15,50 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="product-service" />
-        <module name="order-service" />
         <module name="inventory-service" />
+        <module name="order-service" />
+        <module name="discovery-server" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bb" target="18" />
+      <module name="cc" target="18" />
+      <module name="discovery" target="18" />
+      <module name="discovery-service" target="18" />
+      <module name="discovery-service2" target="18" />
+      <module name="disrovery-server" target="18" />
+      <module name="ear" target="1.5" />
+      <module name="ejbs" target="1.5" />
+      <module name="logging" target="1.5" />
+      <module name="primary-source" target="1.5" />
+      <module name="projects" target="1.5" />
+      <module name="service-discovery" target="18" />
+      <module name="servlet" target="1.5" />
+      <module name="servlets" target="1.5" />
+      <module name="untitled" target="17" />
+      <module name="untitled1" target="18" />
+      <module name="untitled2" target="17" />
+      <module name="untitled3" target="1.5" />
+      <module name="untitled4" target="18" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="bb" options="-parameters" />
+      <module name="cc" options="-parameters" />
+      <module name="discovery" options="-parameters" />
+      <module name="discovery-server" options="-parameters" />
+      <module name="discovery-service" options="-parameters" />
+      <module name="discovery-service2" options="-parameters" />
+      <module name="disrovery-server" options="-parameters" />
       <module name="inventory-service" options="-parameters" />
       <module name="order-service" options="-parameters" />
       <module name="product-service" options="-parameters" />
+      <module name="service-discovery" options="-parameters" />
+      <module name="untitled" options="-parameters" />
+      <module name="untitled1" options="-parameters" />
+      <module name="untitled2" options="-parameters" />
+      <module name="untitled4" options="-parameters" />
     </option>
   </component>
 </project>
