@@ -1,6 +1,12 @@
 # Spring App
 
-* Imlementing different methodologies in app
+* Implementing different methodologies in app
+  * Api Gateway
+  * Distributed Tracing
+  * Circuit Breaker
+  * Discovery Server
+  * Interprocess Communication
+  * Dockerizing
 
 - Learn More [Web Client](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/reactive/function/client/WebClient.html/).
 - Learn More [Interprocess Communication](https://www.nginx.com/blog/building-microservices-inter-process-communication/)
