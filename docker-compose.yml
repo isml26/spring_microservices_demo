@@ -6,13 +6,9 @@ services:
     restart: unless-stopped
     environment:
       POSTGRES_DB: order-service
-      POSTGRES_USER: ismail26
-      POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123
       PGDATA: /data/postgres
-    logging:
-      options:
-        max-size: 10m
-        max-file: "3"
     expose:
       - "5431"
     ports:
@@ -29,10 +25,6 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 123
       PGDATA: /data/postgres
-    logging:
-      options:
-        max-size: 10m
-        max-file: "3"
     volumes:
       - ./postgres-inventory:/data/postgres
     ports:
