@@ -1,0 +1,35 @@
+apiVersion: skaffold/v4beta6
+kind: Config
+metadata:
+  name: microservices
+build:
+  artifacts:
+    - image: ismail26/api-gateway
+      context: api-gateway
+      jib:
+        project: com.demo:api-gateway
+    - image: ismail26/discovery-server
+      context: discovery-server
+      jib:
+        project: com.demo:discovery-server
+    - image: ismail26/inventory-service
+      context: inventory-service
+      jib:
+        project: com.demo:inventory-service
+    - image: ismail26/notification-service
+      context: notification-service
+      jib:
+        project: com.demo:notification-service
+    - image: ismail26/order-service
+      context: order-service
+      jib:
+        project: com.demo:order-service
+    - image: ismail26/product-service
+      context: product-service
+      jib:
+        project: com.demo:product-service
+
+
+manifests:
+  rawYaml:
+    - infra/k8s/*
